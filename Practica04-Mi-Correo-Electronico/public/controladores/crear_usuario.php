@@ -22,7 +22,7 @@
  $fD= isset($_POST["fD"]) ? mb_strtoupper(trim($_POST["fD"]), 'UTF-8'): null;
  $contrasena = isset($_POST["contrasena"]) ? trim($_POST["contrasena"]) : null;
  //$rol = isset($_POST["rol"]) ? mb_strtoupper(trim($_POST["rol"]), 'UTF-8') : null;
- $rol = "user";
+ $rol = "admin";
  $sql = "INSERT INTO usuario VALUES (0, '$cedula', '$nombres', '$apellidos', '$direccion', '$telefono',
 '$correo', MD5('$contrasena'), '$fD', 'N', null, null, '$rol')";
  if ($conn->query($sql) === TRUE) {
