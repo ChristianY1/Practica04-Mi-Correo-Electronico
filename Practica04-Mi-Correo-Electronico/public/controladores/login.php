@@ -7,11 +7,13 @@
 MD5('$contrasena')";
  $result = $conn->query($sql);
  if ($result->num_rows > 0) {
- $_SESSION['isLogged'] = TRUE;
- header("Location: ../../admin/vista/usuario/index.php");
- } else {
- header("Location: ../vista/login.html");
- }
+    $_SESSION['isLogged'] = TRUE;
+    header("Location: ../../admin/vista/usuario/index.php");
+    } else {
+    header("Location: ../vista/login.html");
+    }
+   
+    $conn->close();
 
- $conn->close();
+
 ?>
