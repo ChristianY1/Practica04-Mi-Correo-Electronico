@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="crear_usuario.css">
+</head>
+<body>
+        <form id="formulario001" method="POST" action="../controladores/crear_usuario.php" onsubmit="return validarCamposObligatorios();">
+        <label>Cedula</label>
+        <input type="text"  name="cedula" id="cedula">
+        <br>
+        <label >Nombres</label>
+        <input type="text" name="nombres" id="nombres">
+        <br>
+		<label>Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos">
+        <br>
+        <label>Direccion</label>
+        <input type="text" name="direccion" id="direccion">
+        <br>
+        <label>Telefono</label>
+        <input type="text" name="telefono" id="telefono">
+        <br>
+        <label>Correo Electronico</label>
+        <input type="email" name="correo" id="correo">
+        <br>
+		<label>Contasena</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <label>fecha_nacimiento</label>
+        <input type="date" name="fD" id="fD">
+        <br>
+		<input  id="boton" type="submit" value="Enviar">
+		</form>
+</body>
+</html>
