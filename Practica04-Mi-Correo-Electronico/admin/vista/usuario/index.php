@@ -23,6 +23,7 @@
  echo "<p>Usuarios Registrados</p>";
  $sql = "SELECT * FROM usuario WHERE usu_rol = 'user'";
  $result = $conn->query($sql);
+ echo "<a href='../../../public/vista/ver_reuniones2.php'>ver invitaciones</a>"; 
 
  if ($result->num_rows > 0) {
 
@@ -41,8 +42,8 @@
  echo " <td> <a href='modificar.php?codigo=" . $row['usu_codigo'] . "'>Modificar</a> </td>";
  echo " <td> <a href='cambiar_contrasena.php?codigo=" . $row['usu_codigo'] . "'>Cambiar
 contraseña</a> </td>";
-
  echo "</tr>";
+
  }
  } else {
  echo "<tr>";
